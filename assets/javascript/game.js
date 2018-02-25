@@ -40,7 +40,7 @@ function crystalGame() {
 
 $(".crystal-image").on("click", function(){
     console.log($(this).attr("data-crystalvalue"));
-
+if (counter < targetGuess) {
     counter += parseInt($(this).attr("data-crystalvalue"));
     $("#score").text(counter);
 
@@ -56,8 +56,9 @@ $(".crystal-image").on("click", function(){
         $("#loss").text(losses);
         setTimeout(newGame, 1000);
       }
-        });
-    }
+        }
+    });
+}
 });
 
 

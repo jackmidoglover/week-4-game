@@ -48,6 +48,10 @@ header {
     border-radius: 25px;
     margin: 15px;
 }
+.crystal-image:hover {
+    background-color: #09B28B;
+    border: 3px solid #0BD6A7;
+}
 .crystals {
     text-align: center;
     margin:0 auto;

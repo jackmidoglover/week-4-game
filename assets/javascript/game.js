@@ -47,14 +47,14 @@ if (counter < targetGuess) {
     if (counter === targetGuess) {
         wins++;
         $("#wins").text(wins);
-        setTimeout(newGame, 1000);
+        setTimeout(newGame, 1500);
 
       }
   
       else if (counter > targetGuess) {
         losses++;
         $("#loss").text(losses);
-        setTimeout(newGame, 1000);
+        setTimeout(newGame, 1500);
       }
         }
     });

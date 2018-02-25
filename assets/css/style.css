@@ -1,7 +1,119 @@
+body {
+    background-image: url("../images/congruent_pentagon.png");
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #FF98D9;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    color: #FF2F87;
+    text-shadow: 2px 2px 2px #2D0054, 4px 4px 3px #fff;
+}
+
+h2, h4 {
+    font-family: 'Amatic SC', cursive;
+
+}
+h2 {
+    font-size: 50px;
+    text-decoration: underline;
+    line-height: 1;
+    margin: 0;
+}
+h4 {
+    font-size: 50px;
+    line-height: 1.5;
+}
+header {
+    text-align: center;
+    width: 593px;
+    padding: 30px 0;
+    margin: 0 auto;
+    background-color: #0BD6A7;
+    border: 3px solid #09B28B;
+    border-radius: 22px;
+    position: relative;
+    top: 0;
+}
 .crystal-image {
     height: 100px;
     width: 100px;
+    border: 3px solid #098FB5;
+    border-radius: 25px;
+    background-color: #0BD6A7;
+    border: 3px solid #09B28B;
+    border-radius: 25px;
+    margin: 15px;
 }
-body {
-    background-image: url("../images/congruent_pentagon.png");
+.crystals {
+    text-align: center;
+    margin:0 auto;
+    clear: both;
+}
+
+.bigContainer {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #BBA0ED;
+    border-radius: 25px;
+    overflow: auto;
+    border: 6px solid #C9ACFF;
+}
+.container {
+    background-color: #0DCAFF;
+    border: 3px solid #098FB5;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+#instructions {
+    text-align: center;
+    color: #7500D9;
+    padding: 25px;
+}
+
+#instructions>h4 {
+color: #FF2F87;
+}
+#instructions>ol>li {
+    list-style-type: decimal;
+    text-align: left;
+    }
+
+
+.gameBlock {
+    width: 250px;
+    height: 200px;
+    background-color:#7500D9;
+    float: left;
+    margin: 20px;
+    border: 3px solid #32067A;
+    border-radius: 25px;
+    text-align: center;
+}
+.scoreBlock {
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+    border-radius: 25px;
+    text-align: center;
+    color: #FF2F87;
+}
+
+@media only screen
+ and (min-device-width : 320px) 
+ and (max-device-width : 480px) 
+ and (-webkit-min-device-pixel-ratio: 2) {
+.bigContainer{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.container {
+    margin-top: 80px;
+}
 }

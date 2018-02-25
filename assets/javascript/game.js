@@ -27,6 +27,7 @@ function gameStart() {
     $("#jade").attr("data-crystalvalue", crystal4);
     $("#targetGuess").text(targetGuess);
 }
+
 function newGame() {
     gameStart();
     counter = 0;

@@ -10,42 +10,65 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
     <script src="./assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Montserrat+Alternates|Permanent+Marker" rel="stylesheet">
 </head>
 
 <body>
+<div class="bigContainer">
+<header><h1>Crystal Collector</h1></header>
+<div class="container" id="instructions">
+    <p>You are a geologist. You are gathering samples of different crystals for a study. Your research grant specifies how many samples you must collect. However, if you collect more than the specified goal, you will anger the mine operators who determine how many crystals you can retrieve for your study!</p>
+    <p><h4>How to play:</h4></p>
+    <ol>
+    <li>Look at the Goal.</li>
+    <li>Click on the crystals below. They will add points to your Score.</li>
+    <li>Keep clicking on crystals to add points to your score, but try to keep in mind how many points each crystal gives you so you don't go over the goal!</li>
+    <li>If you go over the goal, you lose.</li>
+    <li>If you match the exact number of crystals, you win!</li>
+    </ol>
+    <br>
+    <p>Have fun!</p>
 
-<header><h1>Crystal Collector Game</h1></header>
-
-<div class="container" id="instructions">Game Instructions Here</div>
-
-<div class="container" id="crystalButtons">
-<p>
-    <img class="crystal-image" id="citrine" src="./assets/images/citrine.png">
-    <img class="crystal-image" id ="howlite" src="./assets/images/howlite.png">
-    <img class="crystal-image" id="aquamarine" src="./assets/images/aquamarine.png">
-    <img class="crystal-image" id="jade" src="./assets/images/jade.png">
-</p>
 </div>
 
-<div class="container" id="targetNumber">
+
+<div class="container gameBlock" id="targetNumber">
     <p>
-        <h2>Number to Guess: </h2> <span id="targetGuess"></span>
-    </p>
+        <h2>Goal:</h2> 
+            <p>
+                <h4><span id="targetGuess"></span></h4>
+                </p>
+            </p>
 </div>
 
-<div class="container" id="currentScore">
-    <div id="scoreBanner">Your total score is:</div>
-    <div id="score">0</div>
+<div class="container gameBlock" id="currentScore">
+    <p>
+        <h2>Current score:</h2>  
+            <p>
+                <h4><span id="score">0</span></h4>
+            </p>
+    </p>
 </div>
-
-<div class="container" id="winsLosses">
+<div class="crystals" id="crystalButtons">
+        <p>
+            <img class="crystal-image" id="citrine" src="./assets/images/citrine.png">
+            <img class="crystal-image" id ="howlite" src="./assets/images/howlite.png">
+            <img class="crystal-image" id="aquamarine" src="./assets/images/aquamarine.png">
+            <img class="crystal-image" id="jade" src="./assets/images/jade.png">
+        </p>
+        </div>
+<div class="container scoreBlock">
     <p>
-        Wins: <span id="wins"></span>
+        <h2>Wins:</h2> <h4><span id="wins"></span></h4>
     </p>
+</div>
+<div class="container scoreBlock">
     <p>
-        Losses:<span id="loss"></span>
+        <h2>Losses:</h2><h4><span id="loss"></span></h4>
     </p>
+</div>
 </div>
 
 </body>

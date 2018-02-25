@@ -47,14 +47,14 @@ $(".crystal-image").on("click", function(){
     if (counter === targetGuess) {
         wins++;
         $("#wins").text(wins);
-        newGame();
+        setTimeout(newGame, 1000);
 
       }
   
       else if (counter > targetGuess) {
         losses++;
         $("#loss").text(losses);
-        newGame();
+        setTimeout(newGame, 1000);
       }
         });
     }

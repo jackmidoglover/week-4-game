@@ -13,8 +13,12 @@ When this condition is met, the player wins. If the player's score exceeds the g
 The primary goal in designing this game was to create variables that would generate a random number within a range, then append that value to as a data attribute to a corresponding element on the DOM. An additional goal for designing this game was to make use of the setTimeout function to allow users to view their score side by side with the goal number before the game was reset. 
 
 ## Future Goals
-Future goals for the game include sound effects for clicking the crystals, and maybe pleasant background music. Additional mobile responsiveness could be added. Currently, though rare, sometimes two different crystal elements will generate the same random number. Creating a solution so that the crystals are never the same number is a great way to contribute to the project.
+- [ ] creating a solution so that the crystal1 - crystal4 variables never generate the same number
+- [ ] additional mobile responsiveness
+- [ ] background music 
+- [ ] sound effects for click events & win/loss events
 
 ## Contributers
-jackmidoglover 
+_jackmidoglover_ 
+
 Feel free to message me on gitHub.

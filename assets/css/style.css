@@ -52,6 +52,9 @@ header {
     background-color: #09B28B;
     border: 3px solid #0BD6A7;
 }
+.crystal-image:active {
+    border: 3px solid #ffffff;
+}
 .crystals {
     text-align: center;
     margin:0 auto;
